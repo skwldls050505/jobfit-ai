@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F5F3FF] text-[#111827]">
@@ -5,9 +6,11 @@ export default function Home() {
       {/* 네비게이션 */}
       <header className="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 bg-white shadow-sm z-50">
         <h1 className="text-xl font-bold text-[#8B5CF6]">JobFit AI</h1>
-        <button className="bg-[#8B5CF6] text-white px-4 py-2 rounded-xl transition hover:bg-[#7C3AED] hover:scale-105">
-  로그인
-</button>
+        <Link href="/login">
+          <button className="bg-[#8B5CF6] text-white px-4 py-2 rounded-xl transition hover:bg-[#7C3AED] hover:scale-105">
+            로그인
+          </button>
+        </Link>
       </header>
       
      {/* 메인 */}
