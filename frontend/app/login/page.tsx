@@ -1,3 +1,6 @@
+import Input from "@/components/Input";
+import Button from "@/components/Button";
+
 export default function LoginPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-[#F5F3FF]">
@@ -10,25 +13,10 @@ export default function LoginPage() {
 
         <form className="flex flex-col gap-4">
           
-          <input
-            type="email"
-            placeholder="이메일"
-            className="border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]"
-          />
-
-          <input
-            type="password"
-            placeholder="비밀번호"
-            className="border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]"
-          />
-
-          <button
-            type="submit"
-            className="bg-[#8B5CF6] text-white py-2 rounded-xl transition hover:bg-[#7C3AED]"
-          >
-            로그인
-          </button>
-        </form>
+          <Input type="email" placeholder="이메일" />
+          <Input type="password" placeholder="비밀번호" />
+          <Button text="로그인" />
+          </form>
 
         <p className="text-sm text-center mt-4 text-gray-500">
           계정이 없으신가요?
